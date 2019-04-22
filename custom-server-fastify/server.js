@@ -1,4 +1,17 @@
-const fastify = require('fastify')({ logger: { level: 'error' } })
+// const fastify = require('fastify')({ logger: { level: 'error' } });
+
+const Fastify = require('fastify');
+
+// https is necessary otherwise browsers will not
+// be able to connect
+const fastify = Fastify({
+  http2: true
+  https: {
+    key: getKeySomehow(),
+    cert: getCertSomehow()
+  }
+});
+
 const Next = require('next')
 
 const port = parseInt(process.env.PORT, 10) || 3000
