@@ -9,6 +9,7 @@
   "dependencies": {
     "fastify": "2.1.0",
     "fastify-auto-push": "^0.4.0",
+    "fastify-compress": "^0.8.1",
     "next": "latest",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

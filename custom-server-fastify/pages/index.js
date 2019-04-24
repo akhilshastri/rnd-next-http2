@@ -13,5 +13,10 @@ export default () => (
         <a>b</a>
       </Link>
     </li>
+      <li>
+      <Link href='/c' as='/c'>
+        <a>c</a>
+      </Link>
+    </li>
   </ul>
 )
